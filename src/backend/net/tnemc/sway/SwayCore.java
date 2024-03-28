@@ -1,7 +1,7 @@
 package net.tnemc.sway;
 /*
  * sway Panel
- * Copyright (C) 2022 - 2024 Daniel "creatorfromhell" Vidmar
+ * Copyright (C) 2024 Daniel "creatorfromhell" Vidmar
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,11 +17,19 @@ package net.tnemc.sway;
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
  * SwayPlugin
  *
  * @author creatorfromhell
  * @since 0.0.1.0
  */
-public class SwayPlugin {
+@SpringBootApplication
+public class SwayCore {
+
+  public void start() {
+    SpringApplication.run(SwayCore.class);
+  }
 }

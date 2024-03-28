@@ -49,19 +49,19 @@
         </snapshotRepository>
     </distributionManagement>
 
-    <repositories>
-
-    </repositories>
-
     <dependencies>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.2.4</version>
+        </dependency>
     </dependencies>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
         <directory>target</directory>
         <outputDirectory>target/classes</outputDirectory>
-        <finalName>TNE-${project.artifactId}-${project.version}</finalName>
+        <finalName>sway-${project.artifactId}-${project.version}</finalName>
         <testOutputDirectory>target/test-classes</testOutputDirectory>
         <sourceDirectory>src/backend/</sourceDirectory>
         <resources>
@@ -116,17 +116,7 @@
                     <dependencyReducedPomLocation>${project.build.directory}/dependency-reduced-pom.xml</dependencyReducedPomLocation>
                     <artifactSet>
                         <includes>
-                            <include>org.json.simple:*</include>
-                            <include>net.tnemc:*</include>
-                            <include>com.zaxxer:*</include>
-                            <include>redis.clients:*</include>
-                            <include>org.apache.commons:*</include>
-                            <include>org.yaml:*</include>
-                            <include>me.carleslc.Simple-YAML:*</include>
-                            <include>co.aikar:*</include>
-                            <include>cloud.commandframework:*</include>
-                            <include>com.github.Revxrsal.Lamp:*</include>
-                            <include>net.kyori:*</include>
+                            <include>org.springframework.boot:*</include>
                         </includes>
                     </artifactSet>
                     <relocations>
